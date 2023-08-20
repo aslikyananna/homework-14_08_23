@@ -1,0 +1,13 @@
+def factor(x):
+    fact=1
+    count=0
+    base=10
+    while x>0:
+        fact*=x
+        x-=1
+    while fact%base==0:
+            count+=1
+            base*=10
+    return fact, count
+print(factor(1000))
+
